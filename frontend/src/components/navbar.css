@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
     overflow: hidden;
     background-color: #84AE92;
