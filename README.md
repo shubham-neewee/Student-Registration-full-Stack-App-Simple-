@@ -33,7 +33,7 @@ This simple app allows users to **add**, **view**, and **manage** student regist
 ### Prerequisites
 
 - Node.js installed
-- MongoDB running locally or on cloud (e.g., MongoDB Atlas)
+- MySQL running locally.
 
 ### Installation
 
