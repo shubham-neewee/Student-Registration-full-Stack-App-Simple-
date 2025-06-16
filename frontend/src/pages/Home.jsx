@@ -4,6 +4,7 @@ import Studentcard from '../components/Studentcard';
 import Popup from 'reactjs-popup';
 import cross from '../assets/cross.png'
 import tick from '../assets/check.png'
+import { ToastContainer, toast } from 'react-toastify';
 
 const Home = () => {
   const [data, setData] = useState([]);
@@ -36,12 +37,20 @@ const userReg = (close) => {
       "name" : name,
       "e_mail" : email
     })
+  }).then(response => {
+    if (!response.ok) { 
+      toast.error('Registration Failed!')
+    }
+    else {
+        toast.success(`Registered Successfully!`);
+    }
   })
   setName('');  // clear input
   setEmail('');
   close();      // close modal
   setTimeout(()=>{
     window.location.reload()
+    
   },2000)
   // window.location.reload()
 };
@@ -85,6 +94,7 @@ const userReg = (close) => {
         <Studentcard key={index} name={user.name} email={user.email} />
       ))}
       </div>
+      <ToastContainer />
     </>
   );
 };

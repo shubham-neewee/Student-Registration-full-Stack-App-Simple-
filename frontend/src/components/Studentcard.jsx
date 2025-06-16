@@ -32,7 +32,7 @@ const OnClickBtn = async () => {
 };
 const showToaster = () => {
   console.log("jdniewdew")
-  toast.success('Wow so easy !');
+  toast.success(`Taped on ${props.name}'s Card !`);
 }
 
   return (
