@@ -2,8 +2,8 @@
 
 A beginner-friendly full stack web application for **student registration** built with:
 
-- ⚙️ **Backend**: Node.js + Express.js  
-- 🗃️ **Database**: MySQL  
+- ⚙️ **Backend**: Node.js (v20.14.0)
+- 🗃️ **Database**: MySQL 
 - 🌐 **Frontend**: ReactJs  
 
 This simple app allows users to **add**, **view**, and **manage** student registrations with a clean UI and structured backend.
@@ -40,12 +40,15 @@ This simple app allows users to **add**, **view**, and **manage** student regist
 ```bash
 git clone https://github.com/saikatdasdeveloper/Student-Registration-full-Stack-App-Simple-.git
 cd Student-Registration-full-Stack-App-Simple-
-npm install
+cd Server & npm install 
+node server.js
 ```
 
 ### Run Front-End
 
 ```bash
+cd Student-Registration-full-Stack-App-Simple-
+npm i
 npm run dev
 ```
 
